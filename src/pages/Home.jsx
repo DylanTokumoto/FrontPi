@@ -1,4 +1,6 @@
 import CardHome from "../components/CardHome/index"
+import Categories from "../components/Categories"
+import SearchBlock from "../components/SearchBlock"
 import '../styles/Home.css'
 
 function Home() {
@@ -61,6 +63,29 @@ function Home() {
         description: "KATCHAU"
     }
    ] 
+
+   const categories = [
+    {
+        title: "luxo",
+        quantity: "130",
+        img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png"
+    },
+    {
+        title: "elétricos",
+        quantity: "60", 
+        img: "https://thumbor.forbes.com/thumbor/fit-in/960x/https://www.forbes.com/wheels/wp-content/uploads/2020/12/Tesla-S-hero-960.jpg"
+    },
+    {
+        title: "suv",
+        quantity: "140",
+        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2022/06/PBR22_0078_fine-e1658260756271.jpg"
+    },
+    {
+        title: "esportivos",
+        quantity: "12",
+        img: "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-ferrari-sf90-stradale-2020-fd-hero-front_0.jpg?itok=SEGd1tLc"
+    }
+   ]
    
 
 
@@ -69,43 +94,12 @@ function Home() {
             <main>
                 <div className="body">
                
-                    <div className="second_header">
+                    <SearchBlock />
 
-                        <h1>Faça sua reserva</h1>
+                    <section >
 
-
-                        <div className="options">
-
-                            <div className="input_flex">
-                                <label htmlFor="city_name">CIDADE</label>
-                                <input type="text" className="city_name" placeholder="Cidade" />
-                            </div>
-
-                            <div className="input_flex">
-                                <label htmlFor="date">DATA DE INICIO</label>
-                                <input type="date" className="date" placeholder="none" />
-                            </div>
-
-                            <div className="input_flex">
-                                <label htmlFor="date">DATA DE DEVOLUÇÃO</label>
-                                <input type="date" className="date" placeholder="none" />
-                            </div>
-
-                            <div className="input_flex">
-                                <br />
-                                <button className="btn_header">Buscar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <section className="categories">
-                        <h3 className="categories_title">Categorias</h3>
-                        <div className="categories_cards">
-                            <div className="card_home"></div>
-                            <div className="card_home"></div>
-                            <div className="card_home"></div>
-                            <div className="card_home"></div>
-                        </div>
+                        <Categories categorias={categories}/>
+                        
                     </section>
 
                     <section>

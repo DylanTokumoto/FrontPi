@@ -5,13 +5,18 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Footer from "../components/Footer"
+import HeaderLogado from "../components/HeaderLogado"
 
 const RouteList = () => {
+
+    const usuarioLogado = localStorage.getItem("nome")
+    
+
     return(
         <>
             <BrowserRouter>
                 <header>
-                    <MainHeader />
+                    {usuarioLogado? <HeaderLogado nomeUsuario={usuarioLogado}/> : <MainHeader />}
                 </header>
 
                     <Routes>

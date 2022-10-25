@@ -3,9 +3,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from 'react';
+
 
 function MainHeader() {
+
+    
+    const location = useLocation()
+    const [path, setPath] = useState(location.pathname)
+
+    useEffect(() => {
+    setPath(location.pathname)
+
+    }, [location.pathname])
+    
     return (
         <>
             <header>
@@ -26,10 +38,10 @@ function MainHeader() {
 
                     <ButtonGroup className='md-4' style={{ width: "70vw", display: "flex" }}>
                         <Link to="/login" >
-                            {window.location.pathname !== "/login" ? <Button className='me-3 rounded' variant='outline-success' style={{ width: "19vw"}}> Login </Button> : ''}
+                            {path !== "/login" ? <Button className='me-3 rounded' variant='outline-success' style={{ width: "19vw"}}> Login </Button> : ''}
                         </Link>
                         <Link to="/signup">
-                            {window.location.pathname !== "/signup" ? <Button className='me-3 rounded' variant='outline-primary' style={{ width: "19vw"}}> Cadastre-se </Button> : ''}
+                            {path !== "/signup" ? <Button className='me-3 rounded' variant='outline-primary' style={{ width: "19vw"}}> Cadastre-se </Button> : ''}
                         </Link>
                     </ButtonGroup>
                 </Navbar>

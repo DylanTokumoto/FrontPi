@@ -1,15 +1,14 @@
 import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 
-
+const login = {
+    nome: "email",
+    email: "email@email.com",
+    password: "senhaDoEmail"
+}
 
 const validate = values => {
     const errors = {};
-
-    const login = {
-        email: "email@email.com",
-        password: "senhaDoEmail"
-    }
 
     if (!values.email) {
         errors.email = 'Obrigatório';
@@ -37,7 +36,10 @@ const LoginForm = () => {
             password: '',
         },
         validate,
-        onSubmit: () => {window.location.href="/"},
+        onSubmit: () => {
+            localStorage.setItem("nome", login.nome)
+            window.location.href="/"
+        },
         
         // values => {
 
