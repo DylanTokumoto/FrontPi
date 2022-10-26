@@ -1,12 +1,9 @@
 import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 
-import React, { useEffect } from 'react';
 import Swal from 'sweetalert2';
 
-
 import "./style.css"
-import { render } from 'react-dom';
 
 
 const validate = values => {

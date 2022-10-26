@@ -7,10 +7,7 @@ function Login() {
     return (
         <>
             <div className="login">
-               
                 <LoginForm />
-                
-       
             </div>
         </>
     )

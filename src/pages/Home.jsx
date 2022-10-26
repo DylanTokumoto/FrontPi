@@ -1,52 +1,53 @@
 import CardHome from "../components/CardHome/index"
 import Categories from "../components/Categories"
 import SearchBlock from "../components/SearchBlock"
+
 import '../styles/Home.css'
 
 function Home() {
 
    const listaCarros = [
     {
-        img: "https://img.olx.com.br/images/59/599186190403590.jpg",
-        category: "Esportivo",
-        title: "Escort GL 1.6",
+        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3O0cadRmXuJtPJ-xrq9kGHcTNaVXreJl60YOd2VTaC0w2o4X8mLJZtA0WEHV9IYv0DwExWlS-KfuJhDbO1QHfGhdCE4W-9VJQLk8B0DHCXF7SJEf8r31sZyR1NKi4KDr2lDEhTBjv-Ej4a11UU_5di5dinYeFzr50jbdIe7v8SrmhTHvgF8u1CwW6eA/s2560/rolls-royce_phantom_1.png.jpg",
+        category: "Luxo",
+        title: "Rolls Royce Phantom",
+        location: "São Paulo", 
+        description: "O Phantom é o sedan de grande porte da marca Rolls-Royce. O modelo é equipado com motor V12..."
+    },
+    {
+        img: "https://s2.glbimg.com/5Bs7t4bUJudtPuPuHJ6zBueWs5g=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/r/k/muxO0lTfG83jjoysP1Kw/2019-08-22-range-rover-evoque-1.jpg",
+        category: "Luxo",
+        title: "Range Rover Evoque",
+        location: "São Paulo", 
+        description: "Range Rover Evoque é um esportivo compacto da marca Land Rover. Seu design e potência são os..."
+    },
+    {
+        img: "https://s2.glbimg.com/sJ4jOH48z4g-vYd9rpW_gcQIgc0=/0x0:1914x1261/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/D/s/8D8AVITVibR7BiPOiXeQ/new-carrera.jpg",
+        category: "Esportivos",
+        title: "Porsche 911 Carreira",
         location: "Sorocaba", 
-        description: "LA MAQUINA MAS BLOZ DE TOTE ITALIE"
+        description: "A silhueta do 911 Carrera é inconfundível, tem o DNA da marca Porsche desde 1963 tanto no design..."
     },
     {
-        img: "https://i.ytimg.com/vi/nJRSW25yGAo/maxresdefault.jpg",
-        category: "Rasga Asfalto 🥵",
-        title: "Civic 99 V-tec",
+        img: "https://s2.glbimg.com/NSpNy1wqX4odlioK28hLDuCRoFw=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2021/F/Q/N7RznyQUyTVxwtqLxQCw/jeep-compass-2022-dianteira-movimento.jpeg",
+        category: "SUV",
+        title: "Jeep Compass",
         location: "Sorocaba", 
-        description: "Ta potente"
+        description: "Jeep Compass é um grande colecionador de prêmios, eleito “Melhor Compra do Ano” na categoria SUV Premium..."
     },
     {
-        img: "https://i.pinimg.com/736x/66/4e/86/664e86a3600a1176e45b9e3e5e655c97.jpg",
-        category: "Impressionar as novinhas",
-        title: "Celta Rebaixado",
+        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2020/09/Peugeot-208-Griffe-2021-2.jpg?quality=70&strip=info",
+        category: "Elétricos",
+        title: "Peugeot 208 e-GT",
         location: "Sorocaba", 
-        description: "Tão rebaixado que seu pé encosta no chão"
+        description: "Experimente um novo nível de mobilidade com o Peugeot 208-e, número #1 na categoria de compactos elétricos"
     },
     {
-        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2020/09/Chevrolet-Opala-SS-1976-testado-pela-revista-Quatro-Rodas-1.jpg?quality=70&strip=info",
-        category: "Braziliam Domestic Market",
-        title: "Opala 6 cilindros",
-        location: "No bar mais proximo da sua casa", 
-        description: "Bebe menos que eu quando a saudade dela bate"
-    },
-    {
-        img: "https://heycar.com.br/media/plg_jspeed/cache/images/1c94451d9f290c740147eb4762d4a30f667168ed.webp",
-        category: "Lenda",
-        title: "Palio 97",
-        location: "Sorocaba", 
-        description: "Esse é meu carro atual"
-    },
-    {
-        img: "https://cdn.autopapo.com.br/box/uploads/2020/11/20132108/fiat-147-6-rodas-antes-depois-lata-velha-1-565x353.jpg",
-        category: "fiat 147 de 6 rodas",
-        title: "fiat 147 de 6 rodas",
-        location: "fiat 147 de 6 rodas", 
-        description: "fiat 147 de 6 rodas"
+        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2022/03/DSCF2608-e1646351549605.jpg?quality=70&strip=info",
+        category: "Luxo",
+        title: "Mercedes-Benz C300",
+        location: "São Paulo", 
+        description: "Design único, tecnologia, conforto e potência definem a essência do Mercedes-Benz C300"
     },
     {
         img: "https://static.wikia.nocookie.net/ceacf091-5841-43ea-ab20-432bb427f8ae/scale-to-width/755",
@@ -66,60 +67,51 @@ function Home() {
 
    const categories = [
     {
-        title: "luxo",
+        title: "Luxo",
         quantity: "130",
         img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png"
     },
     {
-        title: "elétricos",
+        title: "Elétricos",
         quantity: "60", 
-        img: "https://thumbor.forbes.com/thumbor/fit-in/960x/https://www.forbes.com/wheels/wp-content/uploads/2020/12/Tesla-S-hero-960.jpg"
+        img: "https://andreveiculos.com.br/blog/wp-content/uploads/2020/02/porsche-taycan.jpg"
     },
     {
-        title: "suv",
+        title: "SUV",
         quantity: "140",
-        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2022/06/PBR22_0078_fine-e1658260756271.jpg"
+        img: "https://i0.wp.com/replicario.com.br/wp-content/uploads/2020/10/cadillac_2021_escalade_0397.jpg?fit=1200%2C628&ssl=1"
     },
     {
-        title: "esportivos",
+        title: "Esportivos",
         quantity: "12",
-        img: "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-ferrari-sf90-stradale-2020-fd-hero-front_0.jpg?itok=SEGd1tLc"
+        img: "https://s2.glbimg.com/k48rKSt1_iM35y4_UUWk8tp3AAA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/B/5/PTZY4TStiTFosuj11llg/mercedes-amg-gt-4-02ca02280c1f083b.jpg"
     }
    ]
    
-
-
-    return (
-        <>
-            <main>
-                <div className="body">
+return (
+<>
+    <main>
+        <div className="body">
                
-                    <SearchBlock />
+            <SearchBlock />
 
-                    <section >
 
-                        <Categories categorias={categories}/>
-                        
-                    </section>
+            <section >
+                <Categories categorias={categories}/>                        
+            </section>
 
-                    <section>
-                        <h2 className="recomendations_title">Recomendações</h2>
-                        <div className="recomendations">
-
-                        <CardHome carro={listaCarros}/>
-                            
-                        </div>
-
-                       
-                    </section>
-
-                
-                    
+            <section className="recomendacoes">
+                <h2 className="recomendations_title">Recomendações</h2>
+                <div className="recomendations">
+                <CardHome carro={listaCarros}/>
                 </div>
-            </main>
-            
-        </>
-    )
+            </section>
+
+        </div>
+    </main>            
+</>
+)
+
 }
 
 export default Home

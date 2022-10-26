@@ -2,9 +2,9 @@ import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 
 const login = {
-    nome: "email",
-    email: "email@email.com",
-    password: "senhaDoEmail"
+    nome: "Luciano Viela",
+    email: "luciano@email.com",
+    password: "123456"
 }
 
 const validate = values => {
@@ -25,7 +25,6 @@ const validate = values => {
     }
 
     return errors;
-
 };
 
 const LoginForm = () => {
@@ -40,11 +39,6 @@ const LoginForm = () => {
             localStorage.setItem("nome", login.nome)
             window.location.href="/"
         },
-        
-        // values => {
-
-        //     alert(JSON.stringify(values, null, 3));
-        // },
     });
     return (
         <div>
@@ -86,4 +80,4 @@ const LoginForm = () => {
     );
 };
 
-export default LoginForm;
+export default LoginForm

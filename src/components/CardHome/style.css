@@ -12,29 +12,48 @@
 
 .card_main img{
     margin-top: 0.75rem;
-    width: 25vw;
-    height: 38vh;
+    max-width: 25vw;
+    max-height: 38vh;
+    width: auto;
+    height: auto;
+}
+
+.card_main h3{
+    width: 12vw;
+    overflow-y: hidden;
 }
 
 .card_description{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: small;
+    position: relative;
 }
 
 .about{
-    background-color: #F0572D;
+    background-color: #f25c05;
     color: white;
+    padding: 6px;
     width: 10vw;
+    font-size: medium;
     border: none;
+    position: absolute;
+    bottom: 0px;
+    top: auto;
 }
 
 .text_description{
     padding: 0.25rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
     width: 16vw;
-    font-size: 16px;
+    height: 25vh;
+    font-size: 15px;
+}
+
+.text_description h6{
+    overflow-y: hidden;
 }
 
 .galeriaCarro{

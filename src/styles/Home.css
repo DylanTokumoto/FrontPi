@@ -12,7 +12,6 @@ html{
 
 body {
     min-height: 100vh;
-    /* position: relative; */
 }
 
 .body{
@@ -27,7 +26,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 25vh;
-    background-color: darkcyan;
+    background-color: #f06b1e;
     color: white;
 }
 
@@ -37,6 +36,8 @@ body {
 
 .second_header input{
     padding: 4px;
+    border: none;
+    width: 20vw;
 }
 
 .options{
@@ -96,7 +97,7 @@ body {
 }
 
 .recomendations_title{
-    margin-top: 1rem;
+    margin: 0.7rem;
     text-align: center;
     overflow-y: hidden;
 }
@@ -106,4 +107,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 8rem;
+}
+
+.recomendacoes{
+    margin-top: 2rem;
+    background-color: rgb(163, 160, 160);
 }

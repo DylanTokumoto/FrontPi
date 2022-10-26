@@ -8,12 +8,13 @@ function Footer() {
     return(
         <>
         <div className="footer">
-            <div className="footer_copyrights">©2022 (Nome do App)</div>
+            <div className="footer_copyrights">©2022 GoCar</div>
             <div className="footer_socialMedia">
-                <img src={Facebook} alt="" />
-                <img src={LinkedIn} alt="" />
-                <img src={Twitter} alt="" />
-                <img src={Instagram} alt="" />
+                <div><img src={Facebook} alt="" /></div>
+                <div><img src={LinkedIn} alt="" /></div>
+                <div><img src={Twitter} alt="" /></div>
+                <div><img src={Instagram} alt="" /></div>
+                
             </div>
         </div>
         </>

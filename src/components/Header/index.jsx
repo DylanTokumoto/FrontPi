@@ -6,6 +6,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
+import Logo from '../../assets/logo_gocar.png'
 
 function MainHeader() {
 
@@ -26,8 +27,8 @@ function MainHeader() {
                         <Navbar.Brand>
                             <Link to="/">
                                 <img
-                                    src="/logo.svg"
-                                    width="30"
+                                    src={Logo}
+                                    width="100"
                                     height="30"
                                     className="align-top ml-4"
                                     alt="LOGO"

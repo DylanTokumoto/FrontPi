@@ -10,26 +10,25 @@ import HeaderLogado from "../components/HeaderLogado"
 const RouteList = () => {
 
     const usuarioLogado = localStorage.getItem("nome")
-    
 
-    return(
-        <>
-            <BrowserRouter>
-                <header>
-                    {usuarioLogado? <HeaderLogado nomeUsuario={usuarioLogado}/> : <MainHeader />}
-                </header>
+return (
+<>
+    <BrowserRouter>
+        <header>
+            {usuarioLogado ? <HeaderLogado nomeUsuario={usuarioLogado} /> : <MainHeader />}
+        </header>
 
-                    <Routes>
-                        <Route exact path="/" element={<Home />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/signup" element={<Signup />} />
-                    </Routes>
-
-                <footer>
-                    <Footer />
-                </footer>
-            </BrowserRouter>
-        </>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
+            </Routes>
+            
+        <footer>
+            <Footer />
+       </footer>
+    </BrowserRouter>
+</>
     );
 };
 
