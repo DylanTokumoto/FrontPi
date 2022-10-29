@@ -4,8 +4,7 @@ function SearchBlock(){
     return(
         <div className="second_header">
 
-                        <h1>Faça sua reserva</h1>
-
+                        <h2>Faça sua reserva</h2>
 
                         <div className="options">
 

@@ -9,7 +9,7 @@ function Footer() {
         <>
         <div className="footer">
             <div className="footer_copyrights">©2022 GoCar</div>
-            <div className="footer_socialMedia">
+            <div className="footer_social_media">
                 <div><img src={Facebook} alt="" /></div>
                 <div><img src={LinkedIn} alt="" /></div>
                 <div><img src={Twitter} alt="" /></div>

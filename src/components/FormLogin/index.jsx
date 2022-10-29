@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 
 const login = {
-    nome: "Luciano Viela",
+    nome: "Luciano Vilela",
     email: "luciano@email.com",
     password: "123456"
 }

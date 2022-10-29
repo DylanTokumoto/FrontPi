@@ -26,9 +26,12 @@
 }
 
 .perfil{
-    width: 4vw;
-    height: 4vw;
+    width: 3.5vw;
+    height: 3.5vw;
     border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #f06b1e;
 }
 
 .welcome_text{

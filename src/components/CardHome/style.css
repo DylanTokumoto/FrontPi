@@ -43,7 +43,7 @@
     top: auto;
 }
 
-.text_description{
+.car_description{
     padding: 0.25rem;
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -52,11 +52,11 @@
     font-size: 15px;
 }
 
-.text_description h6{
+.car_description h6{
     overflow-y: hidden;
 }
 
-.galeriaCarro{
+.galeria_carro{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;

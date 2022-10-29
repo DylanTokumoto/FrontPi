@@ -1,10 +1,12 @@
 import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../../assets/logo_gocar.png'
 
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 import './style.css'
 
-import { Link } from "react-router-dom";
+
 
 function HeaderLogado({ nomeUsuario }) {
 
@@ -22,12 +24,12 @@ function HeaderLogado({ nomeUsuario }) {
     return (
         <>
             <header>
-                <Navbar className='navbar'>
+                <Navbar className="navbar">
                         <Navbar.Brand>
                             <Link to="/">
                                 <img
-                                    src="/logo.svg"
-                                    width="30"
+                                    src={Logo}
+                                    width="100"
                                     height="30"
                                     className="align-top ml-4"
                                     alt="LOGO"

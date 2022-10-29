@@ -50,18 +50,18 @@ function Home() {
         description: "Design único, tecnologia, conforto e potência definem a essência do Mercedes-Benz C300"
     },
     {
-        img: "https://static.wikia.nocookie.net/ceacf091-5841-43ea-ab20-432bb427f8ae/scale-to-width/755",
-        category: "SOY FRANCESCO VIRGOLINII",
-        title: "FIAAAUUUUUUNNN",
-        location: "LA MAQUINA MAS BLOZ DE TOTE ITALIE", 
-        description: "CON EL NUMEROO CUARENTA Y CHINKUE"
+        img: "https://quatrorodas.abril.com.br/wp-content/uploads/2020/11/2020-bmw-m2-cs-limited-edition-13.jpg?quality=70&strip=info&w=1024&resize=1200,800",
+        category: "Esportivos",
+        title: "BMW M2 Competition",
+        location: "São Paulo", 
+        description: "Fabricado em Leipzig, na Alemanha, o BMW M2 é importado ao Brasil em versão única Competition..."
     },
     {
-        img: "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Lightning-McQueen.Cars.webp",
-        category: "GOAT",
-        title: "Relampago Marquinhos",
+        img: "https://www.autoo.com.br/fotos/2021/12/1280_960/Audi4_14122021_70084_1280_960.jpg",
+        category: "SUV",
+        title: "Audi Q3 E-tron",
         location: "Copa pistão ", 
-        description: "KATCHAU"
+        description: "Um SUV para toda a família, o Audi Q3 possui uma presença imponente, com bastante espaço interno..."
     }
    ] 
 
@@ -94,7 +94,6 @@ return (
         <div className="body">
                
             <SearchBlock />
-
 
             <section >
                 <Categories categorias={categories}/>                        

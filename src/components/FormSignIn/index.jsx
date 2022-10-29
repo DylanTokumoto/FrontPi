@@ -40,22 +40,6 @@ const validate = values => {
 
 const SignupForm = () => {
 
-    const Toast = Swal.mixin({
-        position: 'center',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        padding: 15,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        },
-        didClose: () => {
-            window.location.href="/login"
-        }
-      })
-
-
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -65,11 +49,9 @@ const SignupForm = () => {
             confirm_password: '',
         },
         validate,
-        onSubmit: () => {
-        Toast.fire({
-        title: 'Conta Criada',
-        icon: 'success',
-        })
+        onSubmit: values => {
+            alert("Conta Criada! Por favor realize o login");
+            window.location.href="/login"
     },
     });
     return (

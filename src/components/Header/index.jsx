@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 import Logo from '../../assets/logo_gocar.png'
 
 function MainHeader() {
-
     
     const location = useLocation()
     const [path, setPath] = useState(location.pathname)
