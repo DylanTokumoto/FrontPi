@@ -49,3 +49,11 @@ body {
     border: none;
     padding: 10px;
 }
+
+
+@media(max-width: 480px){
+    .btn_login{
+        width: 30vw;
+        padding: 6px;
+    }
+}

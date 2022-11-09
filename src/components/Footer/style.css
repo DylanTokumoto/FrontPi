@@ -19,3 +19,24 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media(max-width: 768px){
+
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .footer_social_media{
+        width: 20vw;
+    }
+}
+
+@media(max-width: 480px){
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .footer_social_media{
+        width: 30vw;
+    }
+}
